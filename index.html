@@ -6,8 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="app"></div>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        ReactDOM.render(
+            React.createElement('h1', null, 'Hello World!'),
+            document.getElementById('app')
+        )
+
+        console.log(React.createElement('h1', {width: '300', hidden: 'd'}, 'Hello World!'))
+    </script>
 </body>
 </html>
